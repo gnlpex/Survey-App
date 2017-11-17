@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Contact Page</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<style>
+	
+		.container {
+			
+			text-align: left;
+			width: 700px;
+			margin-top: 100px;
+			margin-left: 400px;
+		}
+		h6{
+			color: #99A3A4;
+		}
+		.message{
+			float: left;
+		
+		}
+		.btn-round{
+		border-radius: 17px;
+		background-color:#140FC3;
+		color:#FFFFFF;
+		
+		}
+		/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
+		
+	</style>
+<body style="background-color:#0CF">
+
+	<div class="container" >
+		
+			<div class="col-sm-6 text-center"> </div>
+			<div class="row grid-divider">
+			 <div class="col-sm-10 text-center">
+		  <div class="col-padding">
+		   <div class="jumbotron" >
+				<center><h3>C O N T A C T </h3></center>
+				</br>
+					<h6>Feel free to contact us. We are willing to help you with any issues you may encounter with our products.</h6> </br>
+				<form action="/users" method="post"><div >
+				
+  <div>
+    <input name="name" type="text" class="form-group col-sm-5" placeholder="Name" />  
+    <input name="email" type="text" class="form-group col-sm-5" placeholder="Email" />
+  </div>
+  <div>
+    <input  name="subject" type="text" class="form-group col-sm-5" placeholder="Subject"/>  
+ 
+  
+				 <form id="form1" runat="server">
+    <div>
+	
+	
+    
+Budget </br>
+
+<select name='day' id='dayddl' class="form-group col-sm-5">
+<option value='1'>Php 100- Php 500</option>
+<option value='2'>Php 500- Php 1000</option>
+<option value='3'>Php 1000- Php 1500</option>
+<option value='4'>Php 1500- Php 2000</option>
+<option value='5'>Php 2000- Php 2500</option>
+<option value='6'>Php 2500- Php 3000</option>
+<option value='7'>Php 3000- Php 3500</option>
+<option value='8'>Php 3500- Php 4000</option>
+<option value='9'>Php 4000- Php 4500</option>
+<option value='10'>Php 4500- Php 5000</option>
+
+</select>
+
+	
+    </div>
+    </form>
+	</div>
+	</br>
+	
+		  
+		</div>
+					
+		
+<div class = "message" ></h5>Message</h5></div></br>	
+<div>
+	<input name="mes" type="text" class="form-control  " placeholder="" style= " line-height: 100px;" />  
+</div>
+		</div>
+			
+	</div>	
+		
+	
+
+</body>
+</html>
