@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Survey Page</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<style>
+	
+		.container {
+			
+			text-align: left;
+			width: 800px;
+			margin-top: 100px;
+			margin-left: 400px;
+		}
+		h6{
+			color: #99A3A4;
+		}
+		.message{
+			float: left;
+		
+		}
+		.btn-round{
+		border-radius: 17px;
+		background-color:#140FC3;
+		color:#FFFFFF;
+		
+		}
+		/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+
+	#Check1{
+		vertical-align: right;
+	}
+}
+		
+	</style>
+<body style="background-color:#0CF">
+
+	<div class="container" >
+		
+			<div class="col-sm-6 text-center"> </div>
+			<div class="row grid-divider">
+			 <div class="col-sm-10 text-center">
+		  <div class="col-padding">
+		   <div class="jumbotron" >
+				<center><h3>S U R V E Y</h3></center>
+				</br>
+					
+				<form action="/users" method="post"><div >
+				
+  <div>
+    <input name="fname" type="text" class="form-group col-sm-5" placeholder=" First Name" />  
+    <input name="lname" type="text" class="form-group col-sm-5" placeholder="Last Name" />
+  </div>
+  
+  <div> 
+	<form id="form1" runat="server">
+    <div>
+		Sex
+
+		<select name='day' id='dayddl' class="form-group col-sm-3">
+		<option value='1'>Male</option>
+		<option value='2'>Female</option>
+		
+
+		</select>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Country
+
+		<select name='day' id='dayddl' class="form-group col-sm-3">
+		<option value='1'>Australia</option>
+		<option value='2'>Philippines</option>
+		<option value='3'>Canada</option>
+		<option value='4'>China</option>
+		<option value='5'>Japan</option>
+		<option value='6'>New Zealand</option>
+		<option value='7'>Hongkong</option>
+		<option value='8'>Singapore</option>
+		<option value='9'>Thailand</option>
+		<option value='10'>Taiwan</option>
+
+		</select>
+
+	
+    </div>
+	
+    </form>
+	</div>
+	</br>
+	
+		  
+		</div>
+					
+		<form class="form-inline">
+  <div class="form-group">
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>What is your issue related to?</p>
+     <div class="form-group">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>How satisfied are you with </br> our new products?</p>
+   </div>
+  </div>
+  </form>
+  <form>
+		<div class = "form-group">
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="Check1" >Software Issue
+		</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="Check2" > Not at all satisfied
+		</div>
+		<div class = "form-group">
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="Check1" >Hardware Issue
+		</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="Check2" > Satisfied
+	</div
+	<div class = "form-group">
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="Check1" >Other
+		</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="Check2" > Very Satisfied
+	</div
+  </form>
+
+		</div>
+			
+	</div>	
+		
+	
+
+</body>
+</html>
