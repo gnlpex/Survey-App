@@ -10,7 +10,7 @@
 		.container {
 			margin: 0 auto;
 			text-align: left;
-			width: 800px;
+			width: 500px;
 			margin-top: 150px;
 		}
 		h6{
@@ -22,19 +22,42 @@
 		color:#FFFFFF;
 		
 		}
+		/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
 		
 	</style>
 <body style="background-color:#0CF">
 
 	<div class="container" >
 		
-		<div class="col-lg-6" style="margin:0px auto" >
-			<div class="jumbotron" >
+			<div class="col-sm-6 text-center"> </div>
+			<div class="row grid-divider">
+			 <div class="col-sm-10 text-center">
+		  <div class="col-padding">
+		   <div class="jumbotron" >
 				<center><h3>Login</h3></center>
 				<h6> Please enter your basic credentials</h6>
 				<form>
 				<div class="form-group">
-				<input type="email" class="form-control" placeholder="Enter Username">
+				<input type="email" class="form-control" placeholder="Enter Username" >
 				</div>
 				<div class="form-group">
 				<input type="password" class="form-control" placeholder="Password">
@@ -53,13 +76,21 @@
 				</form>
 			
 			
-			</div>
-		
-		
+				
+			
+				</div>
+				
+		  </div>
+		  
 		</div>
+					
 		
+
+		</div>
+			
+	</div>	
 		
-		
-	</div>
+	
+
 </body>
 </html>
